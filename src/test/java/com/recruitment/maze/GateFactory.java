@@ -3,7 +3,7 @@ package com.recruitment.maze;
 public class GateFactory {
     private String gateSymbol;
 
-    public GateFactory(String gateSymbol) {
+    GateFactory(String gateSymbol) {
         this.gateSymbol = gateSymbol;
     }
 
