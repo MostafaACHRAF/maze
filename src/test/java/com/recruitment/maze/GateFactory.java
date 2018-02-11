@@ -1,17 +1,14 @@
 package com.recruitment.maze;
 
-public class GateFactory {
-    private String gateSymbol;
+import static com.recruitment.maze.AppConfiguration.GateFactoryConfig.NORMAL_GATE_SYMBOL;
 
-    GateFactory(String gateSymbol) {
-        this.gateSymbol = gateSymbol;
-    }
+class GateFactory {
 
-    public Gate create() {
-        if (gateSymbol.equals("|")) {
-            return new NormalGate();
+    static Gate create(String gateSymbol, String toRoomCode) {
+        if (gateSymbol.equals(NORMAL_GATE_SYMBOL)) {
+            return new NormalGate(toRoomCode);
         } else {
-            return new SensorGate();
+            return new SensorGate(toRoomCode);
         }
     }
 }

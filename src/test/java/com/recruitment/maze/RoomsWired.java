@@ -1,24 +1,31 @@
 package com.recruitment.maze;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.List;
 
-public class RoomsWired {
+import static com.recruitment.maze.AppConfiguration.RoomsWiredConfig.*;
+
+class RoomsWired {
     private static String firstRoomCode;
     private static String secondRoomCode;
     private static String commonGateSymbol;
 
-    public static Collection<? extends Room> wire(String roomToRoomRelation) {
-        extractedData(roomToRoomRelation);
-
-        Gate commonGate = RoomFactory.create(commonGateSymbol);
-        Room firstRoom = RoomFactory.create(secondRoomCode, commonGate);
-        Room secondRoom = RoomFactory.get(splitedRoomToRoomRelation[2]);
+    static void wireFrom(String roomToRoomRelation) {
+        extractedDataFrom(roomToRoomRelation);
+        wire();
     }
 
-    private static void extractedData(String roomToRoomRelation) {
-        String[] splitedRoomToRoomRelation = roomToRoomRelation.split("");
-        firstRoomCode = splitedRoomToRoomRelation[0];
-        commonGateSymbol = splitedRoomToRoomRelation[1];
-        secondRoomCode = splitedRoomToRoomRelation[2];
+    private static void extractedDataFrom(String roomToRoomRelation) {
+        String[] extractedData = roomToRoomRelation.split(SPLIT_DATA_REGEX);
+        firstRoomCode = extractedData[FIRST_ROOM_INDEX];
+        commonGateSymbol = extractedData[GATE_ROOM_INDEX];
+        secondRoomCode = extractedData[SECOND_ROOM_INDEX];
+    }
+
+    private static void wire() {
+        Gate firstRoomGate = GateFactory.create(commonGateSymbol, secondRoomCode);
+        Gate secondRoomGate = GateFactory.create(commonGateSymbol, firstRoomCode);
+        RoomFactory.create(firstRoomCode, firstRoomGate);
+        RoomFactory.create(secondRoomCode, secondRoomGate);
     }
 }

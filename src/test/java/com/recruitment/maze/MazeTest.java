@@ -1,11 +1,12 @@
 package com.recruitment.maze;
 
 
-import org.junit.Assert;
+import com.recruitment.maze.AppExceptions.ClosedDoorException;
+import com.recruitment.maze.AppExceptions.DoorAlreadyClosedException;
+import com.recruitment.maze.AppExceptions.IllegalMoveException;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertThat;
 
 public class MazeTest {
 
@@ -114,7 +115,6 @@ public class MazeTest {
         mz.walkTo("B");
     }
 
-
     @Test
     public void follow_Walker() {
         Maze mz = new Maze("A$B", "A$C", "B$D", "D$E", "D$F", "F$H", "D$F");
@@ -139,6 +139,4 @@ public class MazeTest {
         mz.walkTo("G");
         assertThat(mz.readSensors()).isEqualTo("AB;EF");
     }
-
-
 }

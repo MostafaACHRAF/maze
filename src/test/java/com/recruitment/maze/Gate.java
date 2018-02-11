@@ -1,27 +1,31 @@
 package com.recruitment.maze;
 
-public abstract class Gate implements Cloneable {
-    private Room room;
+import static com.recruitment.maze.AppConfiguration.GateFactoryConfig.CLOSED;
+import static com.recruitment.maze.AppConfiguration.GateFactoryConfig.OPENED;
+
+abstract class Gate {
+    private String toRoomCode;
     private String state;
 
-    public Gate() {
-        this.state = "OPENED";
+    Gate(String toRoomCode) {
+        this.toRoomCode = toRoomCode;
+        this.state = OPENED;
     }
 
-    public Room getRoom() {
-        return room;
+    void close() {
+        this.state = CLOSED;
     }
 
-    public void gateTo(Room room) {
-        this.room = room;
+    boolean isGateTo(String roomCode) {
+        return roomCode.equals(toRoomCode);
     }
 
-    public void close() {
-        this.state = "CLOSED";
+    boolean isClosed() {
+        return this.state.equals(CLOSED);
     }
 
     @Override
-    protected Gate clone() throws CloneNotSupportedException {
-        return (Gate) super.clone();
+    public String toString() {
+        return toRoomCode;
     }
 }
