@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51d5992e-0df4-4bb3-9722-ea47d7f86065" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/recruitment/maze/Maze.java" afterPath="$PROJECT_DIR$/src/test/java/com/recruitment/maze/Maze.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,21 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="102">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomsWired.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoomsWired.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/RoomsWired.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding>
                 <element signature="e#1169#1170#0" expanded="true" />
                 <element signature="e#1227#1228#0" expanded="true" />
@@ -43,7 +42,7 @@
       <file leaf-file-name="MazeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/MazeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="238">
               <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding />
             </state>
@@ -286,8 +285,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MazeTest">
-    <configuration name="MazeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MazeTest.follow_Walker">
+    <configuration name="MazeTest.allow_Back_And_Forth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.recruitment.maze.*" />
@@ -299,8 +298,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.recruitment.maze" />
       <option name="MAIN_CLASS_NAME" value="com.recruitment.maze.MazeTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="allow_Back_And_Forth" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -312,7 +311,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MazeTest.allow_Cyclic_Path" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MazeTest.allow_Walker_To_Close_Passed_Door" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.recruitment.maze.*" />
@@ -324,7 +323,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.recruitment.maze" />
       <option name="MAIN_CLASS_NAME" value="com.recruitment.maze.MazeTest" />
-      <option name="METHOD_NAME" value="allow_Cyclic_Path" />
+      <option name="METHOD_NAME" value="allow_Walker_To_Close_Passed_Door" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -362,7 +361,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MazeTest.follow_Walker_Through_Unmonitored_Path" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MazeTest.not_Allow_Closed_Door_Crossing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.recruitment.maze.*" />
@@ -374,7 +373,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.recruitment.maze" />
       <option name="MAIN_CLASS_NAME" value="com.recruitment.maze.MazeTest" />
-      <option name="METHOD_NAME" value="follow_Walker_Through_Unmonitored_Path" />
+      <option name="METHOD_NAME" value="not_Allow_Closed_Door_Crossing" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -493,19 +492,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Turn_Back_Through_Closed_Door" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker_Through_Unmonitored_Path" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Cyclic_Path" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Back_And_Forth" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Walker_To_Close_Passed_Door" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Closed_Door_Crossing" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Turn_Back_Through_Closed_Door" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Cyclic_Path" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker_Through_Unmonitored_Path" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Turn_Back_Through_Closed_Door" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.follow_Walker" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Turn_Back_Through_Closed_Door" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.not_Allow_Closed_Door_Crossing" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Walker_To_Close_Passed_Door" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.allow_Back_And_Forth" />
       </list>
     </recent_temporary>
   </component>
@@ -523,47 +522,48 @@
       <option name="presentableId" value="Default" />
       <updated>1518363185695</updated>
       <workItem from="1518363190502" duration="18612000" />
-      <workItem from="1518461313968" duration="1329000" />
+      <workItem from="1518461313968" duration="1611000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MazeTest - 2018.02.11 at 21h 52m 56s.xml">
-      <configuration name="MazeTest" configurationId="JUnit" />
+    <history-entry file="MazeTest_allow_Back_And_Forth - 2018.02.12 at 21h 56m 32s.xml">
+      <configuration name="MazeTest.allow_Back_And_Forth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest - 2018.02.12 at 18h 54m 18s.xml">
-      <configuration name="MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest - 2018.02.12 at 19h 05m 32s.xml">
-      <configuration name="MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_allow_Cyclic_Path - 2018.02.11 at 21h 52m 30s.xml">
+    <history-entry file="MazeTest_allow_Cyclic_Path - 2018.02.12 at 21h 56m 16s.xml">
       <configuration name="MazeTest.allow_Cyclic_Path" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker - 2018.02.11 at 21h 23m 04s.xml">
+    <history-entry file="MazeTest_allow_Walker_To_Close_Passed_Door - 2018.02.12 at 21h 56m 43s.xml">
+      <configuration name="MazeTest.allow_Walker_To_Close_Passed_Door" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_be_Walkable_Till_The_End - 2018.02.12 at 21h 55m 30s.xml">
+      <configuration name="MazeTest.be_Walkable_Till_The_End" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_follow_Walker - 2018.02.12 at 21h 57m 10s.xml">
       <configuration name="MazeTest.follow_Walker" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker - 2018.02.11 at 21h 30m 14s.xml">
+    <history-entry file="MazeTest_follow_Walker - 2018.02.12 at 21h 57m 26s.xml">
       <configuration name="MazeTest.follow_Walker" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker - 2018.02.11 at 21h 43m 22s.xml">
-      <configuration name="MazeTest.follow_Walker" configurationId="JUnit" />
+    <history-entry file="MazeTest_not_Allow_Closed_Door_Crossing - 2018.02.12 at 21h 56m 53s.xml">
+      <configuration name="MazeTest.not_Allow_Closed_Door_Crossing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker_Through_Unmonitored_Path - 2018.02.11 at 19h 41m 18s.xml">
-      <configuration name="MazeTest.follow_Walker_Through_Unmonitored_Path" configurationId="JUnit" />
+    <history-entry file="MazeTest_not_Allow_Turn_Back_Through_Closed_Door - 2018.02.12 at 21h 57m 02s.xml">
+      <configuration name="MazeTest.not_Allow_Turn_Back_Through_Closed_Door" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker_Through_Unmonitored_Path - 2018.02.11 at 21h 22m 13s.xml">
-      <configuration name="MazeTest.follow_Walker_Through_Unmonitored_Path" configurationId="JUnit" />
+    <history-entry file="MazeTest_refuse_Illegal_Move - 2018.02.12 at 21h 55m 55s.xml">
+      <configuration name="MazeTest.refuse_Illegal_Move" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_follow_Walker_Through_Unmonitored_Path - 2018.02.11 at 21h 22m 47s.xml">
-      <configuration name="MazeTest.follow_Walker_Through_Unmonitored_Path" configurationId="JUnit" />
+    <history-entry file="MazeTest_refuse_Move_Without_Path - 2018.02.12 at 21h 56m 09s.xml">
+      <configuration name="MazeTest.refuse_Move_Without_Path" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19941000" />
+    <option name="totallyTimeSpent" value="20223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -574,8 +574,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24884793" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33947772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2749616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33947772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -890,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/MazeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/RoomFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -908,24 +900,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/MazeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/Maze.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/RoomsWired.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
             <element signature="e#1169#1170#0" expanded="true" />
             <element signature="e#1227#1228#0" expanded="true" />
             <element signature="e#1263#1264#0" expanded="true" />
             <element signature="e#1319#1320#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/recruitment/maze/Maze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>

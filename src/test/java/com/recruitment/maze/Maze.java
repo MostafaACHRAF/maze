@@ -16,6 +16,7 @@ class Maze {
 
     Maze walkTo(String roomCode) {
         Room targetedRoom = roomsWired.getRoomByCode(roomCode);
+        System.out.println(roomsWired.displayCreatedRooms());
         path.walkTo(targetedRoom);
         return this;
     }
