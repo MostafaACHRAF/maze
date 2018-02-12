@@ -1,16 +1,15 @@
 package com.recruitment.maze;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static com.recruitment.maze.AppConfiguration.RoomsWiredConfig.*;
 
 class RoomsWired {
     private static String firstRoomCode;
     private static String secondRoomCode;
     private static String commonGateSymbol;
+    private GateFactory gateFactory = new GateFactory();
+    private RoomFactory roomFactory = new RoomFactory();
 
-    static void wireFrom(String roomToRoomRelation) {
+    void wireFrom(String roomToRoomRelation) {
         extractedDataFrom(roomToRoomRelation);
         wire();
     }
@@ -22,10 +21,18 @@ class RoomsWired {
         secondRoomCode = extractedData[SECOND_ROOM_INDEX];
     }
 
-    private static void wire() {
-        Gate firstRoomGate = GateFactory.create(commonGateSymbol, secondRoomCode);
-        Gate secondRoomGate = GateFactory.create(commonGateSymbol, firstRoomCode);
-        RoomFactory.create(firstRoomCode, firstRoomGate);
-        RoomFactory.create(secondRoomCode, secondRoomGate);
+    private void wire() {
+        Gate firstRoomGate = gateFactory.create(commonGateSymbol, secondRoomCode);
+        Gate secondRoomGate = gateFactory.create(commonGateSymbol, firstRoomCode);
+        roomFactory.create(firstRoomCode, firstRoomGate);
+        roomFactory.create(secondRoomCode, secondRoomGate);
+    }
+
+    Room getRoomByCode(String roomCode) {
+        return roomFactory.getRoomByCode(roomCode);
+    }
+
+    String displayCreatedRooms() {
+        return roomFactory.displayCreatedRooms();
     }
 }

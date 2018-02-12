@@ -4,7 +4,7 @@ import static com.recruitment.maze.AppConfiguration.GateFactoryConfig.NORMAL_GAT
 
 class GateFactory {
 
-    static Gate create(String gateSymbol, String toRoomCode) {
+    Gate create(String gateSymbol, String toRoomCode) {
         if (gateSymbol.equals(NORMAL_GATE_SYMBOL)) {
             return new NormalGate(toRoomCode);
         } else {

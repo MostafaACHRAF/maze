@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 class RoomFactory {
-    private static List<Room> createdRooms = new ArrayList<>();
+    private List<Room> createdRooms = new ArrayList<>();
 
-    static Room create(String roomCode, Gate gate) {
+    Room create(String roomCode, Gate gate) {
         if (isExist(roomCode)) {
             Room room = getRoomByCode(roomCode);
             assert room != null;
@@ -20,7 +20,7 @@ class RoomFactory {
         return room;
     }
 
-    private static boolean isExist(String roomCode) {
+    private boolean isExist(String roomCode) {
         for (Room room : createdRooms) {
             if (room.code.equals(roomCode))
                 return true;
@@ -28,7 +28,7 @@ class RoomFactory {
         return false;
     }
 
-    static Room getRoomByCode(String code) {
+    Room getRoomByCode(String code) {
         for (Room room : createdRooms) {
             if (room.code.equals(code))
                 return room;
@@ -36,7 +36,7 @@ class RoomFactory {
         throw new IllegalMoveException();
     }
 
-    public String displayCreatedRooms() {
+    String displayCreatedRooms() {
         StringBuilder stringBuilder = new StringBuilder();
         for (Room room : createdRooms)
             stringBuilder.append(room.toString());
